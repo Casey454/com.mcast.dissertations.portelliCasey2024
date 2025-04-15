@@ -1,0 +1,7 @@
+conda create --name casey python=3.10
+conda activate casey
+conda install jupyter
+ipython kernel install --name "casey-kernel" --user
+conda install conda-forge::pandas matplotlib mlxtend networkx more-itertools seaborn
+conda clean --all
+conda deactivate
